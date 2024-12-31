@@ -1,12 +1,19 @@
 
 import './App.css'
+import Actor from './Actor';
 
 function App() {
+
+  const actors = ['Shakib khan', 'Raj', 'Jashim', 'Robel']
 
   return (
     <>
 
       <h1>Vite + React</h1>
+      <Actor name = {"Tanvir Hossain"}></Actor>
+      {
+        actors.map(actor => <Actor name = {actor}></Actor>)
+      }
       <Persion></Persion>
       <Persion></Persion>
       <Persion></Persion>
